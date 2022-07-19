@@ -33,5 +33,7 @@ int main()
     int sum = x + y + z;
     cout << "Sum of x ,y and z is " << sum << endl;
     cout << "sum of x and y is " << x + y;
+    const int myNum = 15; // myNum will always be 15
+                          // myNum = 10;           // error: assignment of read-only variable 'myNum'
     return 0;
 }
