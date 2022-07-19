@@ -20,5 +20,18 @@ int main()
     // else{
     //     cout << "isTrue is true" << endl;
     // }
+    int myAge = 25;
+    cout << "my age is :" << myAge << endl;
+    int a = 15;
+    int b = 33;
+    // defining multiple variables
+    int x = 5, y = 7, z = 9;
+    cout << "x is " << x << endl;
+    cout << "y is " << y << endl;
+    cout << "z is " << z << endl;
+    // cout << sum;
+    int sum = x + y + z;
+    cout << "Sum of x ,y and z is " << sum << endl;
+    cout << "sum of x and y is " << x + y;
     return 0;
 }
