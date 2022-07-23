@@ -32,11 +32,24 @@ int main()
     // std::cout << "Hello! " << name << "! You are " << age << " year old." << std::endl;
 
     // Reading data with spaces
-    int age = 0;
-    std::string fullName;
-    std::cout << "Please enter your full name:" << std::endl;
-    std::getline(std::cin, fullName);
-    std::cout << "Type in your age:" << std::endl;
-    std::cin >> age;
-    std::cout << "Hello " << fullName << "! You are " << age << " year old." << std::endl;
+    // int age = 0;
+    // std::string fullName;
+    // std::cout << "Please enter your full name:" << std::endl;
+    // std::getline(std::cin, fullName);
+    // std::cout << "Type in your age:" << std::endl;
+    // std::cin >> age;
+    // std::cout << "Hello " << fullName << "! You are " << age << " year old." << std::endl;
+    int a = 10, b = 3;
+    int c;
+    std::cout << "Statement1" << std::endl;
+    std::cout << "Statement2" << std::endl;
+    c = add_numbers(a, b);
+    std::cout << "Statement3" << std::endl;
+    std::cout << "Statement4" << std::endl;
+    // std::cout << "Addition of " << a << " and " << b << " is " << c << std::endl;
+    return 0;
+}
+int add_numbers(int a, int b)
+{
+    return a + b;
 }
