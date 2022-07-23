@@ -20,4 +20,16 @@ int main()
     {
         std::cout << "Light is not green(red)." << std::endl;
     }
+    // printing out a bool
+    //  1 --> true
+    //  0 --> false
+    std::cout << std::endl;
+    std::cout << "red_light :" << red_light << std::endl;
+    std::cout << "green_light :" << green_light << std::endl;
+
+    // Printing out true and false
+    std::cout << std::endl;
+    std::cout << std::boolalpha; // Forces the output format to true/false
+    std::cout << "red_light :" << red_light << std::endl;
+    std::cout << "green_light :" << green_light << std::endl; // Prints out true and false
 }
