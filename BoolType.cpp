@@ -36,4 +36,5 @@ int main()
     int age = 18;
     bool value = (age > 18) ? "Right to vote" : "Not eligible to vote";
     cout << std::boolalpha << value << endl;
+    
 }
