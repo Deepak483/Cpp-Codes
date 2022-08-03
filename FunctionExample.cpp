@@ -14,14 +14,9 @@
 // }
 using namespace std;
 int maximum(int, int);
-int main()
+void printMessage()
 {
-    int a, b;
-    cout << "Enter the two numbers: " << endl;
-    cin >> a >> b;
-
-    int c = maximum(a, b);
-    cout << "The maximum number is: " << c << endl;
+    cout << "Hello World!!" << endl;
 }
 int maximum(int a, int b)
 {
@@ -33,4 +28,19 @@ int maximum(int a, int b)
     {
         return b;
     }
+}
+void myFunction(string fname)
+{
+    cout << "Hello " << fname << endl;
+}
+int main()
+{
+    int a, b;
+    cout << "Enter the two numbers: " << endl;
+    cin >> a >> b;
+
+    int c = maximum(a, b);
+    cout << "The maximum number is: " << c << endl;
+    printMessage();
+    myFunction("Raj");
 }
