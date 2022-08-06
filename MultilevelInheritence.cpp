@@ -37,6 +37,8 @@ public:
 
 int main()
 {
-    
+    GrandChild myObj;
+    myObj.eat();
+    myObj.action();
     return 0;
 }
