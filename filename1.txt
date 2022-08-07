@@ -1,0 +1,2 @@
+Another example of a simple example
+This is most important file and you are reading filename.txt
