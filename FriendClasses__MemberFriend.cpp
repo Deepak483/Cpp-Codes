@@ -17,8 +17,12 @@ public:
 class Complex
 {
     int a, b;
-    friend int Calculator::sumRealComplex(Complex o1, Complex o2);
-    friend int Calculator::sumImgComplex(Complex o1, Complex o2);
+    // individually declaring as friend
+    // friend int Calculator::sumRealComplex(Complex o1, Complex o2);
+    // friend int Calculator::sumImgComplex(Complex o1, Complex o2);
+
+    // alter: declaring entire calculator class as friend
+    friend class Calculator;
 
 public:
     void setNumber(int n1, int n2)
