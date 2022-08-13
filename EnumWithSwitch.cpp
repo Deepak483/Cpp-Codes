@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     enum class Season
-    {
+    {   
         spring,
         summer,
         fall,
