@@ -47,4 +47,5 @@ int main()
             cout << letters[i][j] << "\n";
         }
     }
+    return 0;
 }
