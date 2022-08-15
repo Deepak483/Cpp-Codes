@@ -28,12 +28,20 @@
 using namespace std;
 int main()
 {
+<<<<<<< HEAD
     // Declare array
     char messages[5] = {'H', 'e', 'l', 'l', 'o'};
     cout << "messages :" << endl;
     for (auto c : messages)
     {
         cout << c;
+=======
+    int scores[] = {1, 2, 3, 4, 5, 6, 7, 8};
+    int count{size(scores)};
+    for (size_t i{0}; i < count; i++)
+    {
+        cout << "scores[" << i << "] : " << scores[i] << endl;
+>>>>>>> b6bbd12559bef8fbf4227e885c506d6ba7020826
     }
 
     return 0;
