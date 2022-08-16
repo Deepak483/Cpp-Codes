@@ -64,6 +64,9 @@ int main()
     cout << endl;
     // Pointers with Array
     int *ptr = mathMarks;
+    cout << *ptr << endl;     // 19
+    cout << *(ptr++) << endl; // 19
+    cout << *(++ptr) << endl; // 95
     cout << "mathMarks[0] : " << *ptr << endl;
     cout << "mathMarks[1] : " << *(ptr + 1) << endl;
     cout << "mathMarks[2] : " << *(ptr + 2) << endl;
