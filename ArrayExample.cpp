@@ -25,27 +25,49 @@ int main()
 
     // for (int i = 0; i <= 1; i++)
     // {
-    //     for (int j = 0; j <= 5; i++)
+    //     for (int j = 0; j <= j5; i++)
     //     {
     //         cout << name[i][j] << endl;
     //     }
     // }
-    for (int i = 0; i < 2; i++)
+    // for (int i = 0; i < 2; i++)
+    // {
+    //     for (int j = 0; j < 5; j++)
+    //     {
+    //         cout << name[i][j] << endl;
+    //     }
+    // }
+    // string letters[2][4] = {
+    //     {"A", "B", "C", "D"},
+    //     {"E", "F", "G", "H"}};
+    // for (int i = 0; i < 2; i++)
+    // {
+    //     for (int j = 0; j < 4; j++)
+    //     {
+    //         cout << letters[i][j] << "\n";
+    //     }
+    // }
+
+    // simple example to declare array and initialize it with values after declaration
+    int mathMarks[5];
+    mathMarks[0] = 19;
+    mathMarks[1] = 89;
+    mathMarks[2] = 95;
+    mathMarks[3] = 74;
+    mathMarks[4] = 98;
+    int count = sizeof(mathMarks) / sizeof(mathMarks[0]);
+    cout << "count : " << count << endl;
+    for (size_t i = 0; i < count; i++)
     {
-        for (int j = 0; j < 5; j++)
-        {
-            cout << name[i][j] << endl;
-        }
+        cout << mathMarks[i] << "\t";
     }
-    string letters[2][4] = {
-        {"A", "B", "C", "D"},
-        {"E", "F", "G", "H"}};
-    for (int i = 0; i < 2; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            cout << letters[i][j] << "\n";
-        }
-    }
+    cout << endl;
+    // Pointers with Array
+    int *ptr = mathMarks;
+    cout << "mathMarks[0] : " << *ptr << endl;
+    cout << "mathMarks[1] : " << *(ptr + 1) << endl;
+    cout << "mathMarks[2] : " << *(ptr + 2) << endl;
+    cout << "mathMarks[3] : " << *(ptr + 3) << endl;
+    cout << "mathMarks[4] : " << *(ptr + 4) << endl;
     return 0;
 }
