@@ -23,7 +23,8 @@ int main()
 {
     union book vr;
     vr.bookId = 101;
-    vr.bookName = "Two";
-    vr.price = 89;
+    vr.bookPrice = 200.00;
+    cout << "Book Id : " << vr.bookId << endl;//gives garbage value
+    cout << "Book Price : " << vr.bookPrice << endl;//this will give you atuaal value 200
     return 0;
 }
