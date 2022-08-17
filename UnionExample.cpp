@@ -15,15 +15,24 @@ using namespace std;
 union book
 {
     int bookId;
-    char bookName[20];
+    char bookName;
     float bookPrice;
 };
 
 int main()
 {
-    union book vr;
-    vr.bookId = 101;
-    vr.bookName = "Two";
-    vr.price = 89;
+    union book bk;
+    cout << "Enter Book Id No: " << endl;
+    cin >> bk.bookId;
+    cout << "Enter Book Name: " << endl;
+    // cin >> bk.bookName;
+    cout << "Enter price of book: " << endl;
+    cin >> bk.bookPrice;
+
+    cout << endl;
+    cout << "Book Id No: " << bk.bookId << endl;
+    cout << "Book Name : " << bk.bookId << endl;
+    cout << "Book price : " << bk.bookId << endl;
+
     return 0;
 }
