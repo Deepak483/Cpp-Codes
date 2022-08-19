@@ -15,16 +15,37 @@ using namespace std;
 union book
 {
     int bookId;
-    char bookName[20];
+    char bookName;
     float bookPrice;
+};
+
+union money
+{
+    int rupees;
+    float dollar;
 };
 
 int main()
 {
-    union book vr;
-    vr.bookId = 101;
-    vr.bookPrice = 200.00;
-    cout << "Book Id : " << vr.bookId << endl;//gives garbage value
-    cout << "Book Price : " << vr.bookPrice << endl;//this will give you atuaal value 200
+
+    // union book bk;
+    // cout << "Enter Book Id No: " << endl;
+    // cin >> bk.bookId;
+    // cout << "Enter Book Name: " << endl;
+    // // cin >> bk.bookName;
+    // cout << "Enter price of book: " << endl;
+    // cin >> bk.bookPrice;
+
+    // cout << endl;
+    // cout << "Book Id No: " << bk.bookId << endl;
+    // cout << "Book Name : " << bk.bookId << endl;
+    // cout << "Book price : " << bk.bookId << endl;
+    union money my;
+    my.rupees = 100;
+    my.dollar = 400;
+    cout << my.rupees << endl;
+    my.dollar = 200;
+    cout << my.dollar << endl;
+
     return 0;
 }
