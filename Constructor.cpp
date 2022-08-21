@@ -1,35 +1,44 @@
 #include <iostream>
 using namespace std;
 
-class Car
+class Complex
 {
-public:
-    string brand;
-    string model;
-    int year;
-    // Car(string x, string y, int z)
-    // {
-    //     brand = x;
-    //     model = y;
-    //     year = z;
-    // }
-    // constructor can be declared outside the class also
-    // first we have to declared constructor in class then definition outside
-    Car(string x, string y, int z);
-};
-Car::Car(string x, string y, int z)
-{
-    brand = x;
-    model = y;
-    year = z;
-}
+    int a;
+    int b;
+    int c;
 
+public:
+    Complex(int x, int y)
+    {
+        a = x;
+        b = y;
+    }
+    Complex(int x, int y, int z)
+    {
+        a = x;
+        b = y;
+        c = z;
+    }
+    Complex(int x)
+    {
+        a = x;
+        b = 0;
+    }
+    void printNumber(void)
+    {
+        cout << "Your number is " << a << " + " << b << "i" << endl;
+    }
+};
 int main()
 {
-    Car carObj1("Jaguar", "XB58", 1998);
-    Car carObj2("Ford", "Mustang", 1999);
+    Complex c1(4, 6);
+    c1.printNumber();
 
-    // Print values
-    cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
-    cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+    Complex c2(9);
+    c2.printNumber();
+
+    Complex c3(8, 9, 10);
+    c2.printNumber();
+
+    return 0;
 }
