@@ -33,7 +33,7 @@ TODO: this is the first file
 
 int main()
 {
-    //* making object of complex class
+    //* making object of complex classsh
     Complex c1, c2, c3;
     c1.setData(3, 4);
     c1.displayNumber();
