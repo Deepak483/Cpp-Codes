@@ -1,30 +1,64 @@
+// #include <iostream>
+// using namespace std;
+
+// // creation of of vehicle class
+// // template <typename T>
+// class Vehicle
+// {
+// public:
+//     string brand = "Ford";
+
+//     void honk()
+//     {
+//         cout << "Pom pom!!" << endl;
+//     }
+// };
+// class Car : public Vehicle
+// {
+// public:
+//     string model = "Mustang";
+// };
+
+// int main()
+// {
+//     Car myCar;
+//     myCar.honk();
+//     cout << myCar.brand << endl;
+//     cout << myCar.model << endl;
+
+//     return 0;
+// }
 #include <iostream>
 using namespace std;
 
-// creation of of vehicle class
-// template <typename T>
-class Vehicle
+class Bird
 {
-public:
-    string brand = "Ford";
+    string color;
+    int legs;
 
-    void honk()
+public:
+    void eat()
     {
-        cout << "Pom pom!!" << endl;
+        cout << "The bird has eaten" << endl;
+    }
+    void fly()
+    {
+        cout << "The bird is flying" << endl;
     }
 };
-class Car : public Vehicle
+// derived class: which is inherited from bird class
+class Pigeon : public Bird
 {
 public:
-    string model = "Mustang";
+    void fly()
+    {
+        cout << "Pigeon is flying" << endl;
+    }
 };
-
 int main()
 {
-    Car myCar;
-    myCar.honk();
-    cout << myCar.brand << endl;
-    cout << myCar.model << endl;
-    
+    Pigeon p;
+    p.fly();
+
     return 0;
 }
