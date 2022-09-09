@@ -28,5 +28,6 @@ int main()
     // cout << b.a; //* will not print on console as it is protected in both base and derived class
     // cout << d.a; //* will not print same reason above
     // cout << d.c;
+    
     return 0;
 }
