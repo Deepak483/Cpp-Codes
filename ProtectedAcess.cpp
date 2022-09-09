@@ -8,6 +8,10 @@ protected:
 
 public:
     int c;
+    void getValue(int num)
+    {
+        cout << "Value of c is " << num << endl;
+    }
 
 private:
     int b;
@@ -28,6 +32,6 @@ int main()
     // cout << b.a; //* will not print on console as it is protected in both base and derived class
     // cout << d.a; //* will not print same reason above
     // cout << d.c;
-    
+    b.getValue(3);
     return 0;
 }
