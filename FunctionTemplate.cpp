@@ -15,5 +15,6 @@ int main()
     double result2;
     result2 = add<>(3.4, 9.2);
     cout << "Result2: " << result2 << endl;
+    
     return 0;
 }
