@@ -31,16 +31,19 @@ int main()
 
     // itr = lst1.begin();
     // cout << *itr << endl;
-    cout << "Enter the value of the size: " << endl;
-    cin >> size;
-    for (int i = 1; i <= size; i++)
-    {
-        /* code */
-        cout << "Enter the value: ";
-        cin >> element;
-        list2.push_back(element);
-    }
-    display(list2);
-    // display(lst1);
+    // cout << "Enter the value of the size: " << endl;
+    // cin >> size;
+    // for (int i = 1; i <= size; i++)
+    // {
+    //     /* code */
+    //     cout << "Enter the value: ";
+    //     cin >> element;
+    //     list2.push_back(element);
+    // }
+    // display(list2);
+    // lst1.pop_back();
+    lst1.remove();
+    // lst1.pop_front();
+    display(lst1);
     return 0;
 }
